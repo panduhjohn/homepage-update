@@ -6,13 +6,11 @@
     </head>
     <body>
         <% include ../partials/nav %>
-
-        <div id="container" class="fluid">
-            <main role="main">
+        <main role="main">
+            <div id="container" class="fluid">
                 <% include ../partials/jumbotron %>
 
-                <div class="container">
-                    
+                <div class="container"> 
                     <div class="row">
                         <% items.forEach(({image, title, description}, idx ) => { %> 
                             <div class="col-md-4" style="width:20rem;">
@@ -26,15 +24,9 @@
                             </div>
                         <% }) %>
                     </div>
-
-
-
                 </div>
-            </div>
-                
-            </main>
-        </div>
-
+            </div>    
+        </main>
         <% include ../partials/footer %> 
         <% include ../partials/scripts %>
     </body>
